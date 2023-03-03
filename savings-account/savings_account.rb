@@ -13,7 +13,7 @@ module SavingsAccount
   end
 
   def self.annual_balance_update(balance)
-    balance.to_f * interest_rate(balance.to_f)
+    balance * interest_rate(balance)
   end
 
   def self.years_before_desired_balance(current_balance, desired_balance)
